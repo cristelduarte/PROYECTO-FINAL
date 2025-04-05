@@ -1,0 +1,16 @@
+/* FOOTER */
+footer {
+    background-color: var(--primary-color);
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+footer .instagram a {
+    color: white;
+    text-decoration: underline;
+}
+
+footer .instagram a:hover {
+    color: #cce7ff;
+}

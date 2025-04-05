@@ -1,0 +1,80 @@
+/* Estilos para Gift Card */
+.imagen-giftcard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: auto;
+    animation: fadeInUp 2s ease;
+}
+
+.imagen-giftcard img {
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.imagen-giftcard img:hover {
+    transform: scale(1.05);
+}
+
+.imagen-giftcard p {
+    font-size: 18px;
+    max-width: 500px;
+}
+
+.formulario-giftcard {
+    box-sizing: content-box;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    margin: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+form input {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+form textarea {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+form input[type="submit"] {
+    background-color: #018fc7;
+    margin: 10px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+    padding: 12px;
+}
+
+.monto{
+    margin:10px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #016a9b;
+}

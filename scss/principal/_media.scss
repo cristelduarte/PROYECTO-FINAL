@@ -1,0 +1,25 @@
+/* cambio de pantallas en galerias y servicios */
+@media (max-width: 768px) {
+    .galeria-container, .servicios-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (min-width: 769px) {
+    .galeria-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 15px;
+    }
+}
+
+    @media (min-width: 769px) {
+    .servicios-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+}

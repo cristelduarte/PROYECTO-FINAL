@@ -1,0 +1,48 @@
+
+header {
+    width: 100%;
+    background-color: #018fc7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: #fff !important;
+    font-weight: 500;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.navbar{
+    background-color: transparent;
+    align-items: center;
+    display: block;
+    justify-content: center;
+    width: 100%;
+}
+
+/* TÍTULOS */
+h1.separador {
+    font-size: 2.2rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 2rem 0;
+    color: var(--dark-color);
+}
