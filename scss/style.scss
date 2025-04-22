@@ -1,27 +1,23 @@
-/* Importar fuente */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
 
-@import'principal/variables';
+@use'principal/variables';
 
-@import'principal/body';
+@use'principal/body';
 
-@import'principal/header';
+@use'principal/header';
 
-@import'pages/index';
+@use'pages/index';
 
-@import'pages/blog';
+@use'pages/blog';
 
-@import'pages/galeria';
+@use'pages/galeria';
 
-@import'pages/gift-card';
+@use'pages/gift-card';
 
-@import'pages/servicios';
+@use'pages/servicios';
 
-@import'principal/footer';
+@use'principal/footer';
 
-@import'principal/media';
+@use'principal/media';
 
-@import'principal/animacion';
-
-
+@use'principal/animacion';
 

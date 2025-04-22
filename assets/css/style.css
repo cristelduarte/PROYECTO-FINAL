@@ -1,8 +1,7 @@
 @charset "UTF-8";
-/* Importar fuente */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
 :root {
-  --primary-color: #4A90E2;
+  --primary-color: #4a90e2;
   --light-color: #F1DAC4;
   --dark-color: #2C3E50;
   --accent-color: #E3F2FD;
@@ -17,12 +16,13 @@
 
 body {
   font-family: "Inter", sans-serif;
-  background-color: var(--light-color);
+  background: linear-gradient(#F1DAC4, #E3F2FD);
   color: var(--text-color);
   line-height: 1.6;
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: auto;
 }
 
 h2 {
@@ -99,32 +99,23 @@ main {
   letter-spacing: 1.5px;
 }
 
+.logo {
+  border-radius: 90%;
+  height: 50px;
+  width: 50px;
+  padding-top: 20px;
+  padding-right: 20px;
+  box-sizing: content-box;
+}
+
 /* Estilos para index imagenes */
-.contenedor-imagenes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
-}
-
-.imagen-index {
-  width: 300px;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s, box-shadow 0.3s;
-  padding: 10px;
-  background: white;
-}
-
-.imagen-index img {
+.contenedor-imagen img {
   width: 100%;
-  display: block;
-  border-radius: 10px;
+  height: 100%;
+  justify-content: center;
 }
 
-.contenedor-imagenes img:hover {
+.contenedor-imagen img:hover {
   transform: scale(1.1);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   transition: color 0.3s ease-in-out;
@@ -136,19 +127,9 @@ main {
   margin: 20px;
 }
 
-.bienvenida {
-  background-image: url(/assets/img/index.jpg);
-  background-size: auto;
-  width: 100%;
-  height: 100%;
-  vertical-align: text-top;
-  padding: 100px;
-  animation: fadeIn 1s ease-in-out;
-}
-
 .bienvenida h1 {
-  color: whitesmoke;
-  font-size: 100px;
+  color: #0e4e97;
+  font-size: xx-large;
   text-align: center;
   animation: fadeIn 1s ease-in-out;
 }
@@ -171,15 +152,36 @@ main {
   align-items: center;
 }
 
+h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.aviso-importante {
+  padding: 30px;
+}
+
+.aviso-importante ul {
+  text-align: center;
+  font-weight: bold;
+}
+
+.aviso-importante ul ol {
+  padding: 6px;
+  text-align: justify;
+  font-weight: 100;
+}
+
 /* Estilos para el texto del blog con efecto */
 .blog-text {
   max-width: 800px;
   text-align: justify;
   line-height: 1.8;
   padding: 20px;
-  background-color: white;
+  background-color: #ccecf0;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0px 25px rgb(0, 0, 0);
   margin: auto;
   font-size: 18px;
   transition: transform 0.3s;
@@ -265,9 +267,9 @@ main {
   text-align: center;
   gap: 20px;
   padding: 20px;
-  background: white;
+  background: transparent;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0px 40px rgba(0, 0, 0, 0.2666666667);
   max-width: 600px;
   margin: auto;
   animation: fadeInUp 2s ease;
@@ -281,10 +283,6 @@ main {
   transition: transform 0.3s;
 }
 
-.imagen-giftcard img:hover {
-  transform: scale(1.05);
-}
-
 .imagen-giftcard p {
   font-size: 18px;
   max-width: 500px;
@@ -292,15 +290,15 @@ main {
 
 .formulario-giftcard {
   box-sizing: content-box;
-  display: flex;
+  display: block;
   align-content: center;
   align-items: center;
   width: 100%;
   padding: 20px;
   margin: 20px;
-  background: #fff;
+  background: transparent;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0px 30px rgba(0, 0, 0, 0.4666666667);
 }
 
 form input {
@@ -343,6 +341,7 @@ form input[type=submit]:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  box-sizing: content-box;
   gap: 20px;
 }
 
@@ -391,26 +390,61 @@ footer .instagram a:hover {
 }
 
 /* cambio de pantallas en galerias y servicios */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .galeria-container, .servicios-container {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+  .formulario-giftcard {
+    box-sizing: content-box;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    margin: 20px;
+    background: transparent;
+    border-radius: 10px;
+    box-shadow: 0 0px 30px rgba(0, 0, 0, 0.4666666667);
+  }
 }
-@media (min-width: 769px) {
+@media (min-width: 600px) {
   .galeria-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 15px;
   }
-}
-@media (min-width: 769px) {
-  .servicios-container {
+  .formulario-giftcard {
+    display: block;
+    align-content: center;
+    align-items: center;
+    width: auto;
+    padding: 20px;
+    margin: 20px;
+    background: transparent;
+    border-radius: 10px;
+    box-shadow: 0 0px 30px rgba(0, 0, 0, 0.4666666667);
+  }
+  .servicios-container .formulario-giftcard {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+  }
+}
+@media (min-width: 200px) {
+  .formulario-giftcard {
+    display: block;
+    align-content: center;
+    align-items: center;
+    width: auto;
+    padding: 20px;
+    margin: 20px;
+    background: transparent;
+    border-radius: 10px;
+    box-shadow: 0 0px 30px rgba(0, 0, 0, 0.4666666667);
+    font-size: small;
   }
 }
 /* ANIMACIONES */

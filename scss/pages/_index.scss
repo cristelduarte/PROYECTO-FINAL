@@ -13,33 +13,23 @@ main {
     text-transform: uppercase;
     letter-spacing: 1.5px;
 }
-
+.logo{
+    border-radius: 90%;
+    height: 50px;
+    width: 50px;
+    padding-top: 20px;
+    padding-right: 20px;
+    box-sizing: content-box;
+}
 /* Estilos para index imagenes */
-.contenedor-imagenes {
-    display: flex;
-    flex-wrap: wrap;
+
+.contenedor-imagen img{
+    width:100%;
+    height: 100%;
     justify-content: center;
-    gap: 20px;
-    padding: 20px;
 }
 
-.imagen-index {
-    width: 300px;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s, box-shadow 0.3s;
-    padding: 10px;
-    background: white;
-}
-
-.imagen-index img {
-    width: 100%;
-    display: block;
-    border-radius: 10px;
-}
-
-.contenedor-imagenes img:hover {
+.contenedor-imagen img:hover {
     transform: scale(1.10);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     transition: color 0.3s ease-in-out;
@@ -52,20 +42,11 @@ main {
     margin: 20px;
 }
 
-// roll de la pagina de inicio
-.bienvenida{
-    background-image: url(/assets/img/index.jpg);
-    background-size: auto;
-    width: 100%;
-    height: 100%;
-    vertical-align: text-top;
-    padding: 100px;
-    animation: fadeIn 1s ease-in-out;
-}
+
 
 .bienvenida h1{
-    color: whitesmoke;
-    font-size: 100px;
+    color: #0e4e97;
+    font-size: xx-large;
     text-align: center;
     animation: fadeIn 1s ease-in-out;
 }
@@ -87,3 +68,25 @@ main {
     flex-direction: column;
     align-items: center;
 }
+
+h2{
+    font-weight: bold;
+    text-transform: uppercase;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.aviso-importante{
+    padding: 30px;
+}
+
+.aviso-importante ul{
+    text-align: center;
+    font-weight: bold;
+}
+
+.aviso-importante ul ol{
+    padding: 6px;
+    text-align: justify;
+    font-weight: 100;
+}
+

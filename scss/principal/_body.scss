@@ -2,18 +2,19 @@
 * {
     margin: 0;
     padding: 0;
-    // box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
+
 body {
     font-family: 'Inter', sans-serif;
-    background-color: var(--light-color);
+    background: linear-gradient( #F1DAC4, #E3F2FD);
     color: var(--text-color);
     line-height: 1.6;
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: auto
 }
 
 

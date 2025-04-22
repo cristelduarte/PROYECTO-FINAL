@@ -1,25 +1,62 @@
 /* cambio de pantallas en galerias y servicios */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .galeria-container, .servicios-container {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+    .formulario-giftcard {
+        box-sizing: content-box;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 20px;
+        margin: 20px;
+        background: transparent;
+        border-radius: 10px;
+        box-shadow: 0 0px 30px #0007;
+    }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 600px) {
     .galeria-container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         gap: 15px;
     }
-}
+    .formulario-giftcard {
+        display:block;
+        align-content: center;
+        align-items: center;
+        width: auto;
+        padding: 20px;
+        margin: 20px;
+        background: transparent;
+        border-radius: 10px;
+        box-shadow: 0 0px 30px #0007;
+    }
 
-    @media (min-width: 769px) {
-    .servicios-container {
+    .servicios-container .formulario-giftcard {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         gap: 20px;
     }
+    
+}
+
+    @media (min-width: 200px) {
+        .formulario-giftcard {
+            display:block;
+            align-content: center;
+            align-items: center;
+            width: auto;
+            padding: 20px;
+            margin: 20px;
+            background: transparent;
+            border-radius: 10px;
+            box-shadow: 0 0px 30px #0007;
+            font-size: small;
+        }
 }

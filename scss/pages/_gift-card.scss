@@ -6,9 +6,9 @@
     text-align: center;
     gap: 20px;
     padding: 20px;
-    background: white;
+    background: transparent;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0px 40px #0004;
     max-width: 600px;
     margin: auto;
     animation: fadeInUp 2s ease;
@@ -30,15 +30,15 @@
 
 .formulario-giftcard {
     box-sizing: content-box;
-    display: flex;
+    display: block;
     align-content: center;
     align-items: center;
     width: 100%;
     padding: 20px;
     margin: 20px;
-    background: #fff;
+    background: transparent;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0px 30px #0007;
 }
 
 form input {
